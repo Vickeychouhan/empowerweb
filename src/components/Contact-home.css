@@ -1,0 +1,97 @@
+/* Main Contact Container with Dual Background */
+.contact-page-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 50px;
+    background: linear-gradient(to bottom,#051622  20%, white 50%);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling for the contact information (left side) */
+.contact-info {
+    width: 45%;
+    padding-right: 30px;
+}
+.text1{
+    margin-top: 20px;
+}
+
+.contact-info h1 {
+    color: #dee9fe;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+.contact-info ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.contact-info ul li {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #051622;
+    display: flex;
+    align-items: center;
+}
+
+.contact-info ul li::before {
+    content: '✓';
+    color: #1ba098;
+    margin-right: 10px;
+}
+
+/* Styling for the Form Section (right side) */
+.contact-form {
+    width: 50%; /* Adjusted width to better fit the smaller container */
+    padding: 50px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+  }
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-box {
+    flex: 1;
+    margin-right: 10px;
+}
+
+.input-box:last-child {
+    margin-right: 0;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-btn {
+    background-color: #1ba098;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #169f85;
+}

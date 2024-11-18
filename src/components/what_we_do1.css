@@ -1,0 +1,307 @@
+.hero {
+    text-align: left;
+    padding: 60px 40px;
+    background-color: #f4f4f4;
+  }
+  
+  .hero h1 {
+    font-size: 36px;
+    color: #000A30;
+    font-family: "Inter", Sans-serif;
+    font-size: 46px;
+    font-weight: 600;
+    text-transform: none;
+    font-style: normal;
+    line-height: 1.1em;
+    letter-spacing: -0.4px;
+    word-spacing: 0em;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #000430B3;
+    font-family: "Outfit", Sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    text-transform: none;
+    font-style: normal;
+    line-height: 1.4em;
+    letter-spacing: -0.4px;
+  }
+  
+  .consultation-btn {
+    background-color: #1ba098;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-right: 15px; /* Add gap between the two buttons */
+  }
+  
+  .consultation-btn2 {
+    background-color: #1ba098;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  /* for parameters of work done */
+  
+  .experience {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+  }.stats-section {
+    display: flex;
+    justify-content: space-between; /* Spread the stats evenly across */
+    margin: 50px auto;
+    max-width: 1200px;
+    flex-wrap: wrap; /* Ensures content wraps on smaller screens */
+    padding: 0 20px;
+  }
+  
+  .stat {
+    text-align: center;
+    flex: 1;
+    padding: 0 10px; /* Adjusted padding for better spacing */
+    max-width: 25%; /* Ensure each stat takes up equal space */
+  }
+  
+  .stat h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #002E5B;
+  }
+  
+  .stat span:first-of-type {
+    font-size: 1.2rem;
+    margin-top: 5px;
+    color: #000;
+    display: block;
+  }
+  
+  .stat span:last-of-type {
+    font-size: 1rem;
+    margin-top: 5px;
+    color: #6c757d;
+    display: block;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .stats-section {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center;
+    }
+  
+    .stat {
+      max-width: 100%;
+      padding: 20px 0; /* Add spacing between the stats */
+    }
+  }
+
+
+
+  /* SUCCESS STORIES */
+
+
+  .story-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 50px; /* Add padding to the container */
+    
+  }
+  .success-stories{
+    background-color: #dee9fe;
+  }
+  
+  .button-like-1 {
+    background-color: white; 
+    padding: 2px 15px; /* Reduced padding for a smaller size */
+    border-radius: 5px;
+    margin-left: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 0.4rem; /* Smaller font size */
+    font-weight: bold; /* Optional: make the text bold */
+    width: fit-content; /* Shrink to fit content */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow */
+  }
+  
+  .story-card {
+    background-color: #ffffff; /* White background for the card */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+    overflow: hidden; /* Prevents overflow from image */
+    text-align: center; /* Center the text */
+  }
+  
+  .story-card.large {
+    grid-column: span 2; /* Makes one card larger */
+  }
+  
+  .story-card img {
+    width: 100%; /* Full width for the image */
+    height: auto; /* Maintain aspect ratio */
+    border-bottom: 4px solid #1ba098; /* Accent border below the image */
+  }
+  
+  /* .story-header {
+    padding: 0px; 
+    font-size: 1.0em; 
+    font-weight: bold; 
+    color: #000430B3; 
+  } */
+  
+  .story-description {
+    padding: 0 15px 15px; /* Padding around the description text */
+    color: #555; /* Grey text for description */
+    font-size: 0.9em; /* Smaller font size */
+  }
+  .story-description-1 {
+    color: #2F2F34;
+  }
+  
+  .story-card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+  }
+  .shopify-design {
+    text-align: left;  /* Aligns the text to the left */
+    font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+    font-weight: bold; /* Adds emphasis to the text (optional) */
+    margin: 10px;         /* Removes any default margins (optional) */
+  }
+  .shopify-design-1 {
+    color: #2F2F34;
+      font-family: "Outfit", Sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.6em;
+  
+  }
+  .ecommerce-design{
+    text-align: left;
+    font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+    font-weight: bold; /* Adds emphasis to the text (optional) */
+    margin: 10px; 
+  
+  }
+  .ecommerce-design-1{
+    color: #2F2F34;
+      font-family: "Outfit", Sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.6em;
+  
+  }
+  .non-profit-design{
+    text-align: left;  /* Aligns the text to the left */
+    font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+    font-weight: bold; /* Adds emphasis to the text (optional) */
+    margin: 10px;  
+  
+  }
+  .non-profit-design-1{
+    color: #2F2F34;
+      font-family: "Outfit", Sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.6em;
+  }
+
+  .testimonial-container {
+    width: 60%;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    margin: 40px auto; /* Add margin for spacing */
+}
+
+.testimonial-content {
+    margin-bottom: 20px;
+}
+
+.profile-pic img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.author {
+    font-weight: bold;
+}
+
+.author span {
+    font-weight: normal;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.reviews {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.review-details {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    align-items: center;
+}
+
+.review-details img {
+    width: 20px;
+    margin-right: 10px;
+}
+.arrow-button {
+  background: none;
+  border: none;
+  font-size: 2em; /* Adjust size as needed */
+  cursor: pointer;
+  color: #1ba098; /* Button color */
+  margin: 0 10px; /* Space between text and buttons */
+}
+
+
+.button-container {
+  display: flex;
+  gap: 5px; /* Space between buttons */
+  margin-top: 10px; /* Add space above the buttons */
+}
+
+.arrow-button {
+  background-color: #1ba098;
+  border: none;
+  color: white;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+.arrow-button:hover {
+  background-color: #178f85;
+}

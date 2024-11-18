@@ -1,0 +1,226 @@
+/* Header container */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 15px 20px; */
+  background-color: #051622;
+  color: #fff;
+}
+.design-image1 {
+  width: 180px;  /* Set the desired width */
+  height: auto;  /* Keep the aspect ratio */
+}
+
+/* Navigation container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Brand logo */
+.brand h1 {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.brand a {
+  text-decoration: none;
+  color: #fff;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-links li a:hover {
+  color: #1ba098;
+}
+
+/* Contact Us button */
+.contact-us-btn {
+  margin-right: 60px;
+  margin-top: 18px;
+}
+
+.contact-us-btn button {
+  background-color: #1ba098;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.contact-us-btn button:hover {
+  background-color: #159387;
+}
+
+/* Menu container for icon and dropdown */
+.menu-container {
+  display: flex;
+  align-items: center;
+  position: relative; /* For dropdown positioning */
+  padding: 1px 18px 22px;
+}
+
+/* Menu icon styling */
+.menu-icon {
+  cursor: pointer;
+  color: #fff;
+  margin-left: 20px;
+  margin-top: 20px;
+  font-size: 24px; /* Adjust icon size */
+}
+
+/* Slider Menu (Now opens from the right) */
+.slider-menu {
+  position: fixed;
+  top: 0;
+  right: 0; /* Positioned on the right side */
+  height: 100%;
+  width: 250px;
+  background-color: #fff;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2); /* Shadow from the right */
+  transform: translateX(100%); /* Initially hidden on the right */
+  transition: transform 0.3s ease;
+  z-index: 1000;
+}
+
+.slider-menu.open {
+  transform: translateX(0); /* Slide in from the right */
+}
+
+/* Menu list inside slider */
+.slider-menu ul {
+  list-style: none;
+  padding: 20px;
+  margin: 0;
+}
+
+.slider-menu li {
+  padding: 10px 0;
+}
+
+.slider-menu a {
+  text-decoration: none;
+  color: #051622;
+  font-size: 18px;
+}
+
+.slider-menu a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Overlay that appears when the slider is open */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10;
+}
+
+/* Slider Menu (Now opens from the right) */
+.slider-menu {
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 18%;
+  height: 100%;
+  background: linear-gradient(45deg, rgba(0, 0, 0, 0.5), #dee9fe);
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 50px 30px;
+  z-index: 20;
+}
+
+.slider-menu.open {
+  right: 0;
+}
+
+.close-icon {
+  align-self: flex-end;
+  font-size: 2rem;
+  /* color: #fff; */
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-menu ul {
+  list-style: none;
+  padding: 0;
+  margin-top: -15px;
+  width: 100%;
+}
+
+.slider-menu li {
+  margin: 15px 0;
+}
+
+.slider-menu a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  transition: transform 0.3s, color 0.2s;
+}
+
+.slider-menu a:hover {
+  transform: scale(1.1);
+  color: #1ba098;
+}
+
+
+/* Dropdown styles for mobile */
+.dropdown-menu {
+  display: none; /* Hidden by default for the slider */
+}
+
+/* Base styles for the dropdown */
+.dropdown {
+  position: relative; /* Ensures the dropdown menu is positioned relative to the parent */
+}
+
+.dropdown-menu {
+  display: none;           /* Hide the dropdown by default */
+  position: absolute;      /* Position it below the parent */
+  top: 100%;               /* Aligns it directly below the parent */
+  left: 0;
+  background-color: white; /* Background color for the dropdown */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for a pop-out effect */
+  z-index: 1;             /* Keeps the dropdown above other elements */
+}
+
+.dropdown-menu li {
+  padding: 8px 16px;     /* Padding for each dropdown item */
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0; /* Changes background on hover */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* Shows the dropdown menu on hover */
+}
+

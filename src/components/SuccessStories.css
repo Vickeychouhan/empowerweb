@@ -1,0 +1,106 @@
+.story-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 50px; /* Add padding to the container */
+  
+}
+.success-stories{
+  background-color: #dee9fe;
+}
+
+.button-like-1 {
+  background-color: white; 
+  padding: 2px 15px; /* Reduced padding for a smaller size */
+  border-radius: 5px;
+  margin-left: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  font-size: 0.4rem; /* Smaller font size */
+  font-weight: bold; /* Optional: make the text bold */
+  width: fit-content; /* Shrink to fit content */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Optional: add a slight shadow */
+}
+
+.story-card {
+  background-color: #ffffff; /* White background for the card */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  overflow: hidden; /* Prevents overflow from image */
+  text-align: center; /* Center the text */
+}
+
+.story-card.large {
+  grid-column: span 2; /* Makes one card larger */
+}
+
+.story-card img {
+  width: 100%; /* Full width for the image */
+  height: auto; /* Maintain aspect ratio */
+  border-bottom: 4px solid #1ba098; /* Accent border below the image */
+}
+
+/* .story-header {
+  padding: 0px; 
+  font-size: 1.0em; 
+  font-weight: bold; 
+  color: #000430B3; 
+} */
+
+.story-description {
+  padding: 0 15px 15px; /* Padding around the description text */
+  color: #555; /* Grey text for description */
+  font-size: 0.9em; /* Smaller font size */
+}
+.story-description-1 {
+  color: #2F2F34;
+}
+
+.story-card:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Deeper shadow on hover */
+}
+.shopify-design {
+  text-align: left;  /* Aligns the text to the left */
+  font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+  font-weight: bold; /* Adds emphasis to the text (optional) */
+  margin: 10px;         /* Removes any default margins (optional) */
+}
+.shopify-design-1 {
+  color: #2F2F34;
+    font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6em;
+
+}
+.ecommerce-design{
+  text-align: left;
+  font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+  font-weight: bold; /* Adds emphasis to the text (optional) */
+  margin: 10px; 
+
+}
+.ecommerce-design-1{
+  color: #2F2F34;
+    font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6em;
+
+}
+.non-profit-design{
+  text-align: left;  /* Aligns the text to the left */
+  font-size: 14px;   /* Adjusts the size of the text (you can change the size as needed) */
+  font-weight: bold; /* Adds emphasis to the text (optional) */
+  margin: 10px;  
+
+}
+.non-profit-design-1{
+  color: #2F2F34;
+    font-family: "Outfit", Sans-serif;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.6em;
+}

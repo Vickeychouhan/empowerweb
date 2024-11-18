@@ -1,0 +1,100 @@
+.footer {
+    background-color: #000; /* Black background */
+    color: white;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  
+  .footer-section {
+    flex: 1;
+  }
+  
+  .footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-section li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .footer-section a:hover {
+    color: #1ba098; /* Accent color */
+  }
+  
+  .consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .consultation-logo {
+    width: 300px;
+    height: 190px;
+    /* margin-bottom: 20px; */
+  }
+  
+  .consultation-button {
+    background-color: #1ba098;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .consultation-button:hover {
+    background-color: #159387;
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+  }
+  
+  .address, .social-icons, .policies {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .social-icons a {
+    margin-right: 15px;
+    color: white;
+  }
+  
+  .social-icons a:hover {
+    color: #1ba098;
+  }
+  
+  .policies a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+  }
+  
+  .policies a:hover {
+    color: #1ba098;
+  }
+  
